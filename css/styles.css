@@ -1,0 +1,192 @@
+/* ----------LOCALLY IMPORTED FONT---------- */
+@font-face {
+    font-family: "Impact";
+    src: url("../fonts/Impact.ttf");
+}
+
+/* ----------FIX SOME CROSS BROWSER INCONSISTENCIES---------- */
+*, *::before, *::after, h1, h2, h3, h4, h5{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------SET FONT AND DISABLE TOUCH BEHAVIOUR---------- */
+html {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif, serif;
+    font-size: 16px;
+    touch-action: none;
+}
+
+/* ----------HIGH PRIORITY INDEX FOR THESE ELEMENTS---------- */
+nav , .back-button{
+    z-index: 9999999999;
+}
+
+/* ----------ALLOW FOR COORDINATE CONTROLS OF THESE ELEMENTS---------- */
+#gl-canvas, #canvas_2, #gameArea, footer, .modal-que, .asteroids, .loading, .play-button {
+    position: fixed;
+}
+
+/* ----------MID INDEX FOR HUD CANVAS---------- */
+#canvas_2 {
+    z-index: 99;
+}
+
+/* ----------STYLES FOR WHEN ROID GAME IS FULL-SCREEN---------- */
+div:fullscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ----------LIGHT ON DARK---------- */
+body {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* ----------SUBTLE FOOTER---------- */
+footer {
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 1);
+    bottom: 0;
+    width: 100%;
+    z-index: 99999999;
+}
+
+/* ----------COLUMN CLASS---------- */
+.column {
+    flex-direction: column;
+}
+
+/* ----------TRANSITION CLASS---------- */
+.transit {
+    transition: 0.5s;
+}
+
+/* ----------FOR ANIMATED LOGO---------- */
+.logo {
+    background-color: rgba(80, 80, 80, 1);
+    border-radius: 50%;
+}
+
+/* ----------POINTER CLASS---------- */
+.pointer {
+    cursor: pointer;
+}
+
+/* ----------CLASS FOR MODALS---------- */
+.modal-que {
+    z-index: 9999;
+    top: 90px;
+}
+
+/* ----------AND THIER IMAGES---------- */
+.modal-que img {
+    top: 90px;
+    max-width: 80%;
+    max-height: 100vh;
+}
+
+/* ----------DISSAPPEAR---------- */
+.invis {
+    display: none;
+    z-index: -999999999;
+    pointer-events: none;
+}
+
+/* ----------CENTER THE HECK OUT OF AN ELEMENT---------- */
+.justified {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* ----------PUTT THE ASTEROIDS BEHIND THE UI ELEMENTS---------- */
+.asteroids {
+    top: 0;
+    z-index: -999;
+}
+
+/* ----------UI ELEMENTS---------- */
+.loading, .play-button {
+    top: 39%;
+    font-size: 10vw;
+    width: 100%;
+}
+
+/* ----------UI ELEMENTS---------- */
+.play-button {
+    z-index: 999;
+    padding-top: 3rem;
+}
+
+/* ----------INDEX STYLES---------- */
+.info-div {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* ----------INDEX STYLES---------- */
+.info-head {
+    font-size: 2rem;
+    display: block;
+    padding: 0.5rem;
+}
+
+/* ----------INDEX STYLES---------- */
+.home h1 {
+    color: #db2828;
+}
+
+/* ----------STYLES BASED ON ASPECT RATIO FOR RESPONSIVENESS---------- */
+@media(max-aspect-ratio: 1/1) {
+    /* ----------QUE THE USER TO ROTATE DEVICE---------- */
+    .orientation-modal {
+        display: flex;
+        top: 60px;
+    }
+    
+    /* ----------HIDE THE CONTROLS---------- */
+    .controls-modal-desktop, .controls-modal-mobile {
+        display: none;
+    }
+
+    /* ----------INDEX STYLES---------- */
+    header h1 {
+        font-size: 8rem;
+        padding-top: 7rem;
+    }
+
+    /* ----------INDEX STYLES---------- */
+    .home h1 {
+        font-size: 3.4rem;
+    }
+
+    /* ----------INDEX STYLES---------- */
+    .sub-header {
+        padding-top: 1rem;
+    }
+}
+
+@media(min-aspect-ratio: 1/1) {
+    /* ----------HIDE THE ORIENTATION QUE---------- */
+    .orientation-modal {
+        display: none;
+    }
+    
+    /* ----------INDEX STYLES---------- */
+    header h1 {
+        font-size: 15rem;
+        padding-top: 3rem;
+    }
+    
+    /* ----------INDEX STYLES---------- */
+    .home h1 {
+        font-size: 7rem;
+        padding-top: 5rem;
+    }
+}
