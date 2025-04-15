@@ -2,103 +2,103 @@
 
 /*------BASIC INTERFACE OBJECT------*/
 class Interface {
-  constructor(id) {
-    if (!id) {
-      this.id = 'ANONYMOUS';
+    constructor(id) {
+        if (!id) {
+            this.id = 'ANONYMOUS';
+        }
+        else {
+            this.id = id;
+        }
+        this.parent = null;
+        this.visible = true;
     }
-    else {
-      this.id = id;
-    }
-    this.parent = null;
-    this.visible = true;
-  }
 
-  initialize() {
-    this.local_root = this.root;
-  }
+    initialize() {
+        this.local_root = this.root;
+    }
 
-  update() { }
+    update() { }
 
-  render() { }
+    render() { }
 
-  handleInput() { }
+    handleInput() { }
 
-  reset() { }
+    reset() { }
 
-  get gl() {
-    return GL;
-  }
+    get gl() {
+        return GL;
+    }
 
-  /*------GET HIGHEST PARENT IN CURRENT TREE------*/
-  get root() {
-    if (this.parent === null) {
-      return this;
+    /*------GET HIGHEST PARENT IN CURRENT TREE------*/
+    get root() {
+        if (this.parent === null) {
+            return this;
+        }
+        else {
+            return this.parent.root;
+        }
     }
-    else {
-      return this.parent.root;
-    }
-  }
 
-  /*------GET/SET CURRENT GLOBAL TIMESTAMP------*/
-  get timeStamp() {
-    if (this.root._timeStamp) {
-      return this.root._timeStamp;
+    /*------GET/SET CURRENT GLOBAL TIMESTAMP------*/
+    get timeStamp() {
+        if (this.root._timeStamp) {
+            return this.root._timeStamp;
+        }
+        else {
+            return null;
+        }
     }
-    else {
-      return null;
-    }
-  }
 
-  set timeStamp(value) {
-    this._timeStamp = value;
-  }
+    set timeStamp(value) {
+        this._timeStamp = value;
+    }
 
-  /*------GET/SET AMOUNT OF TIME SINCE PREVIOUS FRAME------*/
-  get timeElapsed() {
-    if (this.root._timeElapsed) {
-      return this.root._timeElapsed;
+    /*------GET/SET AMOUNT OF TIME SINCE PREVIOUS FRAME------*/
+    get timeElapsed() {
+        if (this.root._timeElapsed) {
+            return this.root._timeElapsed;
+        }
+        else {
+            return null;
+        }
     }
-    else {
-      return null;
-    }
-  }
 
-  set timeElapsed(value) {
-    this._timeElapsed = value;
-  }
+    set timeElapsed(value) {
+        this._timeElapsed = value;
+    }
 
-  /*------GET RELATIVE CHANGE IN PASSAGE OF TIME FOR CURRENT FRAME------*/
-  get timeVariance() {
-    if (this.root._timeElapsed) {
-      return (this.root._timeElapsed / 1000) * 60;
+    /*------GET RELATIVE CHANGE IN PASSAGE OF TIME FOR CURRENT FRAME------*/
+    get timeVariance() {
+        if (this.root._timeElapsed) {
+            return (this.root._timeElapsed / 1000) * 60;
+        }
+        else {
+            return 1;
+        }
     }
-    else {
-      return 1;
-    }
-  }
 
-  /*------CONSOLE LOG WITH ID -- WARNING/ERROR OPTION------*/
-  log(message = 'NO-INPUT', type = null) {
-    if (type === 'WARN') {
-      console.warn(`${this.id} WARNS: ${message}`);
+    /*------CONSOLE LOG WITH ID -- WARNING/ERROR OPTION------*/
+    log(message = 'NO-INPUT', type = null) {
+        if (type === 'WARN') {
+            console.warn(`${this.id} WARNS: ${message}`);
+        }
+        else if (type === 'ERROR') {
+            console.error(`${this.id} THROWS ERROR: ${message}`);
+        }
+        else {
+            console.log(`${this.id} SAYS: ${message}`);
+        }
     }
-    else if (type === 'ERROR') {
-      console.error(`${this.id} THROWS ERROR: ${message}`);
-    }
-    else {
-      console.log(`${this.id} SAYS: ${message}`);
-    }
-  }
 
-  static _log(id = 'ANON', message = 'NO-INPUT', type = null) {
-    if (type === 'WARN') {
-      console.warn(`${id} WARNS: ${message}`);
+    static _log(id = 'ANON', message = 'NO-INPUT', type = null) {
+        if (type === 'WARN') {
+            console.warn(`${id} WARNS: ${message}`);
+        }
+        else if (type === 'ERROR') {
+            console.error(`${id} THROWS ERROR: ${message}`);
+        }
+        else {
+            console.log(`${id} SAYS: ${message}`);
+        }
     }
-    else if (type === 'ERROR') {
-      console.error(`${id} THROWS ERROR: ${message}`);
-    }
-    else {
-      console.log(`${id} SAYS: ${message}`);
-    }
-  }
 }

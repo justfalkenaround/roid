@@ -2,7 +2,7 @@
 
 /*------LIGHTS MANAGER CLASS------*/
 class Lights extends ObjectList {
-  constructor(id) {
-    super(id);
-  }
+    constructor(id) {
+        super(id);
+    }
 }

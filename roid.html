@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LOCKDOWN</title>
-    <link rel="stylesheet" href="https://cdn.tlm.cloud/semantic-ui/2.4.1/semantic.min.css" integrity="sha384-YgbKRapHUUSMbq+ZTy6HzAc3nOtKW8oZRhS9lTj7hqfP716Y/fXkBZrN/ncXepKQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- __________NAVBAR__________ -->
     <nav class="ui fixed inverted menu">
-      <div class="ui container">
-        <p class="header item index-link">LOCKDOWN</p>
-        <a href="#" class="item play-link active">ROID</a>
-        <a href="#" class="item controls-toggle pointer">CONTROLS</a>
-        <a href="#" data-sound="false" class="item">🔇</a> <!--🔈🔇-->
-      </div>
+        <div class="ui container">
+            <p class="header item index-link">LOCKDOWN</p>
+            <a href="#" class="item play-link active">ROID</a>
+            <a href="#" class="item controls-toggle pointer">CONTROLS</a>
+            <a href="#" data-sound="false" class="item">🔇</a> <!--🔈🔇-->
+        </div>
     </nav>
     <!-- __________HEADER__________ -->
     <header class="justified">
-      <h1 class="transit">ROID</h1>
+        <h1 class="transit">ROID</h1>
     </header>
     <!-- __________PLAY BUTTON__________ -->
     <section class="justified play-button">
-      <div class="ui animated fade button massive inverted" tabindex="0">
-        <div class="visible content">READY?</div>
-        <div class="hidden content">PLAY</div>
-      </div>
+        <div class="ui animated fade button massive inverted" tabindex="0">
+            <div class="visible content">READY?</div>
+            <div class="hidden content">PLAY</div>
+        </div>
     </section>
     <!-- __________HIDDEN MODALS__________ -->
     <span class="justified loading" style="display:none;">LOADING...</span>
@@ -46,8 +48,8 @@
     <footer class="justified"><span>&copy; FALKEN BROWN</span></footer>
     <!-- __________MAIN CANVASES AND WRAPPER ELEMENT__________ -->
     <div id="gl-div">
-      <canvas id="gl-canvas">NO CANVAS AVAILABLE</canvas>
-      <canvas id="canvas_2">NO CANVAS AVAILABLE</canvas>
+        <canvas id="gl-canvas">NO CANVAS AVAILABLE</canvas>
+        <canvas id="canvas_2">NO CANVAS AVAILABLE</canvas>
     </div>
     <!-- __________LOAD ALL OF THE SCRIPTS__________ -->
     <script src="./js/OBJECTS_DATA/compiled_audio.js"></script>
@@ -89,8 +91,7 @@
     <script src="./js/OBJECTS_DATA/worker_data_compiled.js"></script>
     <script src="./js/OBJECTS_DATA/world_state.js"></script>
     <script src="./js/primary.js"></script>
-    <script src="https://cdn.tlm.cloud/jquery/3.5.1/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
-    <script src="https://cdn.tlm.cloud/semantic-ui/2.4.1/semantic.min.js" integrity="sha384-6urqf2sgCGDfIXcoxTUOVIoQV+jFr/Zuc4O2wCRS6Rnd8w0OJ17C4Oo3PuXu8ZtF" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
-  </body>
+</body>
+
 </html>

@@ -1,37 +1,43 @@
-## WELCOME TO
+# ROID #
 
--------------ROID!-------------
+## A 3D GAME MADE WITH THE WEBGL2.0 API ##
 
-# A 3D GAME MADE WITH A NEW WEBGL2.0 API
+### PLEASE READ ###
 
-## DESCRIPTION
+    I created this application early in my learning and with essentially no tools. No internet, just a text editor, browser and a couple books. Though the code itself may not be objectively impressive, it was a great feat for me at the time.
 
-THIS GAME WAS BUILD FROM SCRATCH, LEVERAGING THE POWER OF VECTOR/MATRIX MATH AND THE WEBGL2.0 API, AMONG OTHERS. THE GOAL OF THE GAME IS TO NAVIGATE AN ASTEROID FIELD AND DESTROY THE ARTIFACTS HIDDIN WITHIN, ALL WHILE AVOIDING A COLLISION WITH THE ASTEROIDS, CONSERVING FUEL/AMMUNITION, AND TRYING TO BEAT PREVIOUS TIME/SCORE GOALS. THE GAME IS FULLY TOUCH CAPABLE AND OR KEYBOARD CAPABLE AND WILL DETECT EITHER AUTOMATICALLY. THE GAME, WHILE USING HIGH QUALITY GRAPHICS AND PHYSICS SIMULATIONS IN REAL-TIME, SHOULD STILL BE PLAYABLE ON MOST LOW-END MOBILE DEVICES.
+### DESCRIPTION ###
 
-## INSTRUCTIONS
+    This game was built from scratch, leveraging the power of vector/matrix math and the WebGL2.0 API, among others. The goal of the game is to navigate an asteroid field and destroy the artifacts hidden within, all while avoiding collisions with the asteroids, conserving fuel and ammunition, and trying to beat previous time and score goals. The game is fully touch-capable and keyboard-capable, automatically detecting the input method. Despite using high-quality graphics and real-time physics simulations, the game should still be playable on most low-end mobile devices.
 
-OPEN THE index.html FILE LOCATED IN THE ROOT DIRECTORY IN YOUR BROWSER OF CHOICE. CLICK/TOUCH PLAY IN EITHER THE MAIN SCREEN OR THE NAVIGATION BAR. WHILE PLAYING. CLICK/TOUCH THE CONTROLS BUTTON IN THE NAVIGATION BAR TO VIEW THE RESPECTIVE CONTROL INSTRUCTIONS. CLICK/TOUCH THE SAME BUTTON TO CLOSE THE CONTROLS INSTRUCTIONS. IF YOU ARE PLAYING ON A COMPUTER WITH A MOUSE/CURSOR, YOU MAY CLICK THE PLAY AREA OF THE SCREEN TO REQUEST FULL SCREEN MODE. THIS FEATURE IS NOT PERFECT IN ALL BROWSERS YET HOWEVER AND MAY NOT WORK FOR YOU. WHEN IN FULL SCREEN MODE PRESS THE ESC BUTTON TO EXIT. IF YOU ARE ON A MOBILE DEVICE THE GAME IS INTENDED TO BE PLAYED LANDSCAPE AND YOU WILL BE PROMPTED TO ROTATE YOUR DEVICE IF IN THE INCORRECT ORIENTATION. ENJOY.
+### INSTRUCTIONS ###
 
-## LANGUAGES INCLUDE
+    Open the `index.html` file located in the root directory in your browser of choice. Click or touch "Play" either on the main screen or in the navigation bar. While playing, click or touch the "Controls" button in the navigation bar to view the respective control instructions. Click or touch the same button to close the control instructions. 
 
-### HTML5
+    If you are playing on a computer with a mouse or cursor, you may click the play area of the screen to request full-screen mode. Note that this feature is not perfect in all browsers and may not work for you. When in full-screen mode, press the `Esc` button to exit. 
 
-### CSS
+    If you are on a mobile device, the game is intended to be played in landscape mode, and you will be prompted to rotate your device if it is in the incorrect orientation. Enjoy!
 
-### Javascript
+### LANGUAGES INCLUDE ###
 
-### ESSL
+- JavaScript
+- ESSL
+- HTML5
+- CSS
+- Semantic UI
 
-### API'S INCLUDE--
-  #### Web Audio API
-  #### HTML5 Canvas API
-  #### WebGL2.0 API
-  #### Poiner-Lock API
-  #### Fullscreen API
-  #### Web Workers API
+### API'S INCLUDE ###
+  - Web Audio API
+  - HTML5 Canvas API
+  - WebGL2.0 API
+  - Poiner-Lock API
+  - Fullscreen API
+  - Web Workers API
 
-## CREDITS
+### CREDITS ###
 
 Falken Brown
 
-I made this when I was still early in my learning, forgive the quality.
+The Last Mile
+
+2024
